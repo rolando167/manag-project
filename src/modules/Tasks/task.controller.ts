@@ -20,7 +20,7 @@ export class TaskController {
     @Get(":id")
     findOne(@Param('id') id: string, @Res() res: Response): void {
         const task = this.taskService.findOne(id) || null;
-        res.status(HttpStatus.CREATED).json({
+        res.status(HttpStatus.OK).json({
             task
         });
     }
