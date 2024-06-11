@@ -1,4 +1,4 @@
-import { Body, Controller, Delete, Get, HttpStatus, Param, Patch, Post, Put, Req, Res } from '@nestjs/common';
+import { Body, Controller, Delete, Get, HttpStatus, Param, Patch, Post, Put, Query, Req, Res } from '@nestjs/common';
 import { TaskService } from './task.service';
 
 import { Request, Response } from 'express';
@@ -13,7 +13,7 @@ export class TaskController {
     }
 
     @Get('/all')
-    getAll(@Res() res: Response): void {
+    getAll(@Res() res: Response, @Query() query: any): void {
         res.status(HttpStatus.OK).json(this.taskService.getTasks());
     }
 
