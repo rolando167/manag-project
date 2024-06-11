@@ -12,7 +12,7 @@ export class TaskService {
     }
 
     findOne(id: string): GetTaskDto {
-        const task : GetTaskDto = {"title": "Test 44", "description": "Desc 2", "created_at": "04-2024", "created_by": 1, "status": "False"}
+        const task : GetTaskDto = {"title": "Test 44", "description": "Desc 2", "created_at": "04-2024", "status": "False"}
         return task;
     }
 

@@ -1,8 +1,8 @@
  // create-Task-dto
 export class GetTaskDto {
     title: string;
-    description: string;
+    description?: string;
     created_at: string;
-    created_by: number;
-    status : string;
+    created_by?: number;
+    status?: string;
 }
