@@ -4,7 +4,7 @@ import { Controller, Get, Param } from '@nestjs/common';
 })
 export class TaskController {
 
-    @Get()
+    @Get('/all')
     getAll(): string {
         return "Obteniendo todas la tareas 😄"
     }
