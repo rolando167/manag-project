@@ -8,6 +8,7 @@
 > npm i -g npm@10.8.1
 
 >nest -v
+
 ========================================
 (Crear proyecto nuevo)
 > nest new manag-project
@@ -20,11 +21,27 @@
 
 (Produccion)
 >npm run start ☕ 🐵
+
+========================================
+(validaciones)
+>npm i --save class-validator class-transformer
 ========================================
 
-(Verifica codigo este correcto)
+(Genera todo CRUD)
+>nest g resource modules/Payments
+
+========================================
+(Verifica que el codigo este correcto)
 >npm run lint
 
+========================================
+(Documentacion Swagger)
+>npm install --save @nestjs/swagger
+
+========================================
+https://docs.nestjs.com/recipes/prisma#set-up-prisma
+(Orm PRISMA DB)
+>npm install prisma --save-dev
 
 ========================================
 (Tecla F1)
@@ -32,12 +49,22 @@
 - Eslint restar server
 - Format Document
 - workspace json
+
 ========================================
 
 (Referencias)
+Curso de Nestjs - Framework Backend de Nodejs - YT faztweb
+
 https://docs.nestjs.com/controllers
 https://docs.nestjs.com/recipes/router-module
 https://levelup.gitconnected.com/create-rest-api-with-clean-architecture-in-nestjs-d01b58d3f3bc
 https://stackoverflow.com/questions/57346320/how-split-routes-by-controllers-in-nestjs-router
-https://github.com/bellus93/test/blob/main/src/admin/users/users.controller.ts
 
+https://github.com/bellus93/test/blob/main/src/admin/users/users.controller.ts
+https://github.com/pawanrijal/nest-crud/blob/master/src/user/user.service.ts
+
+https://dev.to/raguilera82/creacion-de-un-crud-con-api-rest-en-nestjs-4ao3
+https://medium.com/@moisescastro_15074/como-crear-un-crud-utilizando-nestjs-typeorm-y-postgressql-1ff604264e46
+https://medium.com/@pawanrijal/building-a-crud-application-with-nest-js-and-typeorm-352a02c46234
+
+https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme

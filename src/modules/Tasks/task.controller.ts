@@ -1,16 +1,57 @@
-import { Controller, Get, Param } from '@nestjs/common';
+import { Body, Controller, Delete, Get, HttpStatus, Param, ParseIntPipe, Patch, Post, Put, Query, Req, Res } from '@nestjs/common';
+import { TaskService } from './task.service';
+
+import { Request, Response } from 'express';
+import { CreateTaskDto } from './Dto/create-task.dto';
+
 @Controller({
     version: '1'
 })
 export class TaskController {
 
-    @Get()
-    getAll(): string {
-        return "Obteniendo todas la tareas 😄"
+    constructor(private taskService: TaskService) {
+    }
+
+    @Get('/all')
+    getAll(@Res() res: Response, @Query() query: any): void {
+        res.status(HttpStatus.OK).json(this.taskService.getTasks());
     }
 
     @Get(":id")
-    findOne(@Param('id') id: string) {
-        return `This action returns a #${id} 📄`;
+    findOne(@Param('id') id: string, @Res() res: Response): void {
+        const task = this.taskService.findOne(id) || null;
+        res.status(HttpStatus.OK).json({
+            task
+        });
+    }
+
+    @Post('create')
+    create(@Req() req: Request, @Res() res: Response, @Body() task: CreateTaskDto): void {
+        console.log(req.url);
+        this.taskService.create(task);
+        res.status(HttpStatus.CREATED).json({
+            "message": "Task creada!!"
+        });
+    }
+
+    @Put('update')
+    updateAll(): string {
+        return this.taskService.updateAll();
+    }
+
+    @Delete('delete/:id')
+    delete(): string {
+        return this.taskService.delete();
+    }
+
+    @Patch('update')
+    update(): string {
+        return this.taskService.update();
+    }
+
+    @Get('/ticket/:num')
+    getTickect(@Param('num', ParseIntPipe) num: number) {
+        //ParseBoolPipe
+        return num + 14;
     }
 }
