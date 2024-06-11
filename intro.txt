@@ -53,6 +53,8 @@ https://docs.nestjs.com/recipes/prisma#set-up-prisma
 ========================================
 
 (Referencias)
+Curso de Nestjs - Framework Backend de Nodejs - YT faztweb
+
 https://docs.nestjs.com/controllers
 https://docs.nestjs.com/recipes/router-module
 https://levelup.gitconnected.com/create-rest-api-with-clean-architecture-in-nestjs-d01b58d3f3bc
