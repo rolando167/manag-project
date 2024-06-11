@@ -26,6 +26,10 @@
 >npm i --save class-validator class-transformer
 ========================================
 
+(Genera todo CRUD)
+>nest g resource modules/Payments
+========================================
+
 (Verifica que el codigo este correcto)
 >npm run lint
 
