@@ -19,7 +19,7 @@ async function bootstrap() {
     SwaggerModule.setup('api', app, document);
 
     app.enableCors({
-        origin: 'https:faztweb.com',
+        origin: 'https://faztweb.com',
     })
     await app.listen(process.env.PORT || 3000);
 }
