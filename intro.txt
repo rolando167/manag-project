@@ -1,0 +1,35 @@
+
+========================================
+
+========================================
+> npm install -g @nestjs/cli
+
+(opcional)
+> npm i -g npm@10.8.1
+
+>nest -v
+========================================
+(Crear proyecto nuevo)
+> nest new manag-project
+
+(Desarrollo)
+>npm run start:dev
+
+(Convertir )
+>npm run build
+
+(Produccion)
+>npm run start ☕ 🐵
+========================================
+
+(Verifica codigo este correcto)
+>npm run lint
+
+
+========================================
+(Tecla F1)
+
+- Eslint restar server
+- Format Document
+- workspace json
+========================================
