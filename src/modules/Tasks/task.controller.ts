@@ -1,4 +1,4 @@
-import { Body, Controller, Delete, Get, HttpStatus, Param, ParseIntPipe, Patch, Post, Put, Query, Req, Res} from '@nestjs/common';
+import { Body, Controller, Delete, Get, HttpStatus, Param, ParseIntPipe, Patch, Post, Put, Query, Req, Res } from '@nestjs/common';
 import { TaskService } from './task.service';
 
 import { Request, Response } from 'express';
@@ -50,7 +50,7 @@ export class TaskController {
     }
 
     @Get('/ticket/:num')
-    getTickect(@Param('num', ParseIntPipe) num: number){
+    getTickect(@Param('num', ParseIntPipe) num: number) {
         //ParseBoolPipe
         return num + 14;
     }
