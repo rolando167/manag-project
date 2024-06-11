@@ -1,12 +1,18 @@
 import { Controller, Get, Param } from '@nestjs/common';
+import { TaskService } from './task.service';
 @Controller({
     version: '1'
 })
 export class TaskController {
+    taskService: TaskService;
+
+    constructor(taskService: TaskService){
+        this.taskService = taskService;
+    }
 
     @Get('/all')
     getAll(): string {
-        return "Obteniendo todas la tareas 😄"
+        return this.taskService.getTasks();
     }
 
     @Get(":id")
