@@ -1,7 +1,8 @@
 {
     "material-icon-theme.activeIconPack": "nest",
     "material-icon-theme.folders.associations": {
-        "Users": "vm"
+        "Users": "vm",
+        "Dto": "Lua"
     },
     "material-icon-theme.files.associations": {
         "*.routes.ts": "Routing",

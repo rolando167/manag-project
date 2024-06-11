@@ -39,7 +39,9 @@ https://docs.nestjs.com/controllers
 https://docs.nestjs.com/recipes/router-module
 https://levelup.gitconnected.com/create-rest-api-with-clean-architecture-in-nestjs-d01b58d3f3bc
 https://stackoverflow.com/questions/57346320/how-split-routes-by-controllers-in-nestjs-router
+
 https://github.com/bellus93/test/blob/main/src/admin/users/users.controller.ts
+https://github.com/pawanrijal/nest-crud/blob/master/src/user/user.service.ts
 
 https://dev.to/raguilera82/creacion-de-un-crud-con-api-rest-en-nestjs-4ao3
 https://medium.com/@moisescastro_15074/como-crear-un-crud-utilizando-nestjs-typeorm-y-postgressql-1ff604264e46
