@@ -1,4 +1,4 @@
-import { Controller, Get, Param } from '@nestjs/common';
+import { Controller, Delete, Get, Param, Patch, Post, Put } from '@nestjs/common';
 import { TaskService } from './task.service';
 @Controller({
     version: '1'
@@ -15,6 +15,26 @@ export class TaskController {
 
     @Get(":id")
     findOne(@Param('id') id: string) {
-        return `This action returns a #${id} 📄`;
+        return this.taskService.findOne(id);
+    }
+
+    @Post('create')
+    create(){
+        return this.taskService.create();
+    }
+
+    @Put('update')
+    updateAll(){
+        return this.taskService.updateAll();
+    }
+
+    @Delete('delete/:id')
+    delete(){
+        return this.taskService.delete();
+    }
+
+    @Patch('update')
+    update(){
+        return this.taskService.update();
     }
 }
