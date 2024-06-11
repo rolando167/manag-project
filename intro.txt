@@ -22,7 +22,11 @@
 >npm run start ☕ 🐵
 ========================================
 
-(Verifica codigo este correcto)
+(validaciones)
+>npm i --save class-validator class-transformer
+========================================
+
+(Verifica que el codigo este correcto)
 >npm run lint
 
 
