@@ -68,3 +68,4 @@ https://medium.com/@moisescastro_15074/como-crear-un-crud-utilizando-nestjs-type
 https://medium.com/@pawanrijal/building-a-crud-application-with-nest-js-and-typeorm-352a02c46234
 
 https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme
+https://dev.to/endykaufman/local-build-and-run-nestjs-application-56m4
