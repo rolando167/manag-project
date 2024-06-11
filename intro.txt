@@ -8,6 +8,7 @@
 > npm i -g npm@10.8.1
 
 >nest -v
+
 ========================================
 (Crear proyecto nuevo)
 > nest new manag-project
@@ -20,19 +21,27 @@
 
 (Produccion)
 >npm run start ☕ 🐵
-========================================
 
+========================================
 (validaciones)
 >npm i --save class-validator class-transformer
 ========================================
 
 (Genera todo CRUD)
 >nest g resource modules/Payments
-========================================
 
+========================================
 (Verifica que el codigo este correcto)
 >npm run lint
 
+========================================
+(Documentacion Swagger)
+>npm install --save @nestjs/swagger
+
+========================================
+https://docs.nestjs.com/recipes/prisma#set-up-prisma
+(Orm PRISMA DB)
+>npm install prisma --save-dev
 
 ========================================
 (Tecla F1)
@@ -40,6 +49,7 @@
 - Eslint restar server
 - Format Document
 - workspace json
+
 ========================================
 
 (Referencias)
