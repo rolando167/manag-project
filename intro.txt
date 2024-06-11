@@ -43,3 +43,6 @@ https://github.com/bellus93/test/blob/main/src/admin/users/users.controller.ts
 
 https://dev.to/raguilera82/creacion-de-un-crud-con-api-rest-en-nestjs-4ao3
 https://medium.com/@moisescastro_15074/como-crear-un-crud-utilizando-nestjs-typeorm-y-postgressql-1ff604264e46
+
+
+https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme
